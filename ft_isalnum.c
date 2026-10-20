@@ -6,7 +6,7 @@
 /*   By: dde-luca <dde-luca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/10 15:06:29 by dde-luca          #+#    #+#             */
-/*   Updated: 2026/10/13 21:47:13 by dde-luca         ###   ########.fr       */
+/*   Updated: 2026/10/20 20:31:48 by dde-luca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,8 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z' || c >= 'a' || c <= 'z') || (c >= 0 && c <= 9))
-	{
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
-	}
 	else
-	{
-		retrun (0);
-	}
+		return (0);
 }
